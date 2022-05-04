@@ -14,39 +14,13 @@ import {
 import { useRef, useCallback, useEffect, useState, Suspense } from 'react'
 import { BiLeftArrow, BiRightArrow } from 'react-icons/all'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper'
 const Menu = () => {
   const [tablet] = useMediaQuery('(min-width:62em)')
   const [desktop] = useMediaQuery('(min-width:80em')
   const sliderRef = useRef()
   const [menu, setMenu] = useState([])
   let spacing = tablet ? 15 : desktop ? 20 : 10
-
-  // const menus = [
-  //   {
-  //     name: 'Salad',
-  //     icon: '/images/salad.svg',
-  //   },
-  //   {
-  //     name: 'Burger',
-  //     icon: '/images/burger.svg',
-  //   },
-  //   {
-  //     name: 'Chicken',
-  //     icon: '/images/chicken.svg',
-  //   },
-  //   {
-  //     name: 'Drink',
-  //     icon: '/images/drink.svg',
-  //   },
-  //   {
-  //     name: 'Chicken',
-  //     icon: '/images/chicken.svg',
-  //   },
-  //   {
-  //     name: 'Drink',
-  //     icon: '/images/drink.svg',
-  //   },
-  // ]
   const handlePrev = useCallback(() => {
     if (!sliderRef.current) return
     sliderRef.current.swiper.slidePrev()
@@ -98,7 +72,7 @@ const Menu = () => {
       <Suspense fallback={<Text>Loading</Text>}>
         <Swiper
           spaceBetween={spacing}
-          slidesPerView={2}
+          slidesPerView={3}
           grabCursor
           style={{
             width: '100%',
@@ -113,6 +87,10 @@ const Menu = () => {
             },
           }}
           ref={sliderRef}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 2500,
+          }}
         >
           {menu.map((item, idx) => (
             <SwiperSlide key={idx}>
@@ -127,22 +105,16 @@ const Menu = () => {
                   role="group"
                   transition="0.5s ease background-color"
                 >
-                  <Center
-                    // bg="white"
-                    w={40}
-                    // h={30}
-                    // rounded="full"
-                    overflow="hidden"
-                  >
-                    {/* <LinkOverlay href="/"> */}
-                    <Image
-                      src={item.strCategoryThumb}
-                      alt={item.strCategory}
-                      w="full"
-                      h="full"
-                      objectFit="cover"
-                    />
-                    {/* </LinkOverlay> */}
+                  <Center overflow="hidden">
+                    <LinkOverlay href="/">
+                      <Image
+                        src={item.strCategoryThumb}
+                        alt={item.strCategory}
+                        w="full"
+                        h="full"
+                        objectFit="cover"
+                      />
+                    </LinkOverlay>
                   </Center>
                   <Text
                     _groupHover={{
