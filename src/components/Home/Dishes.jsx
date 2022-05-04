@@ -52,9 +52,9 @@ const Dishes = () => {
           {mealTime.map((item, idx) => (
             <Button
               key={idx}
-              variant={active === item.type ? 'solid' : ''}
+              variant={active === item.type ? 'solid' : 'outline'}
+              colorScheme={active === item.type ? 'blue' : 'gray'}
               onClick={handleActive}
-              colorScheme={active === item.type ? 'blue' : ''}
             >
               {item.type}
             </Button>

@@ -20,9 +20,13 @@ const Hero = () => {
         <Heading size="3xl" textAlign={['center', 'center', 'left']}>
           It's not just food food, it's an experience
         </Heading>
-        <Text fontSize="xl" textAlign={['center', 'center', 'left']}>
+        <Text
+          fontSize="xl"
+          textAlign={['center', 'center', 'left']}
+          color="gray.600"
+        >
           Hey! Our delicious food is waiting for you, we are always near to you
-          with fresh fresh item of food
+          with fresh item of food
         </Text>
         <chakra.form
           alignSelf={['center', 'center', 'flex-start']}

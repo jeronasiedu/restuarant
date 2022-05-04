@@ -118,7 +118,7 @@ const Menu = () => {
                   <LinkOverlay href="/">
                     <Image
                       src={item.icon}
-                      alt="salad svg"
+                      alt={item.name}
                       w="full"
                       h="full"
                       objectFit="cover"

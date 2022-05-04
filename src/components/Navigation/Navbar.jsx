@@ -40,7 +40,12 @@ const Navbar = () => {
           isRound
           variant="outline"
         />
-        <Button colorScheme="linkedin">Login</Button>
+        <Button
+          colorScheme="linkedin"
+          display={['none', 'none', 'none', 'block']}
+        >
+          Login
+        </Button>
         <IconButton
           icon={<BiMenu size={22} />}
           colorScheme="linkedin"
