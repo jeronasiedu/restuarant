@@ -18,7 +18,7 @@ const Hero = () => {
     <Stack py={16} direction={['column', 'column', 'row']} spacing={[8, 5, 3]}>
       <VStack flex="1" spacing={8}>
         <Heading size="3xl" textAlign={['center', 'center', 'left']}>
-          It's not just food food, it's an experience
+          It's not just food, it's an experience
         </Heading>
         <Text
           fontSize="xl"
