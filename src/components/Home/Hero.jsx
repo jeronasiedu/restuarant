@@ -30,8 +30,8 @@ const Hero = () => {
           color="gray.600"
           lineHeight={1.7}
         >
-          Every flavor tells a story. Delicious food with meaning. Food that
-          tells a story {""}
+          Every flavor tells a story. Delicious food with meaning. A new way to
+          experience food. at {""}
           <chakra.span
             borderWidth={2}
             borderColor="blue.600"
@@ -41,9 +41,9 @@ const Hero = () => {
             fontWeight={500}
             color="blue.600"
           >
-            Low Cost,
+            Low Cost
           </chakra.span>{" "}
-          High Quality
+          but High Quality.
         </Text>
         <chakra.form
           alignSelf={["center", "center", "flex-start"]}
