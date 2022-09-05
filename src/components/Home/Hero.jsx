@@ -34,7 +34,7 @@ const Hero = () => {
           Every flavor tells a <StylishText text="Story." color="#FF9908" />
           Delicious food with meaning. A new way to experience food at
           <StylishText text="Low Cost" />
-          but High Quality.
+          and High Quality.
         </Text>
         <chakra.form
           alignSelf={["center", "center", "flex-start"]}
