@@ -15,7 +15,7 @@ import { GiMeal } from "react-icons/all"
 import StylishText from "../../core/StylishText"
 const Hero = () => {
   return (
-    <Stack py={16} direction={["column", "column", "row"]} spacing={[8, 5, 3]}>
+    <Stack py={12} direction={["column", "column", "row"]} spacing={[8, 5, 3]}>
       <VStack flex="1" spacing={8}>
         <Heading
           size="3xl"
@@ -65,8 +65,7 @@ const Hero = () => {
         <Image
           src="/images/food2.png"
           alt="An image of food on a plate"
-          w="full"
-          h="full"
+          // h="full"
           objectFit="cover"
         />
       </Center>
