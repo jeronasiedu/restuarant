@@ -10,6 +10,8 @@ const StylishText = ({ text, color = "blue.600" }) => {
       fontWeight={500}
       color={color}
       mr={2}
+      wordBreak="keep-all"
+      whiteSpace="nowrap"
     >
       {text}
     </chakra.span>
