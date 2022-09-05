@@ -31,7 +31,7 @@ const Hero = () => {
           color="gray.600"
           lineHeight={1.7}
         >
-          Every flavor tells a <StylishText text="story" color="#FF9908" />.
+          Every flavor tells a <StylishText text="Story." color="#FF9908" />
           Delicious food with meaning. A new way to experience food. at {""}
           <StylishText text="Low Cost" />
           but High Quality.
