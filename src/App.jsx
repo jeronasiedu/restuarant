@@ -1,5 +1,5 @@
-import { Container } from '@chakra-ui/react'
-import { Dishes, Hero, Menu, Navbar } from './components'
+import { Container } from "@chakra-ui/react";
+import { Dishes, Hero, Menu, Navbar } from "./components";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <Dishes />
       </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

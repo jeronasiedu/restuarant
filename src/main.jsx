@@ -10,7 +10,7 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   fonts: {
     heading: `'capriola', sans-serif`,
-    body: `'fira mono', sans-serif`,
+    body: `'work sans', sans-serif`,
   },
 });
 
