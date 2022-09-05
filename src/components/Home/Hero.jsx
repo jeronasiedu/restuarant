@@ -19,15 +19,15 @@ const Hero = () => {
       <VStack flex="1" spacing={8}>
         <Heading
           size="3xl"
-          textAlign={["center", "center", "left"]}
+          // textAlign={["center", "center", "left"]}
           lineHeight={1.2}
         >
-          Food for all moods · Where{" "}
+          Food for all moods, Where{" "}
           <chakra.span color="#FF9908">Ghana</chakra.span> eats!
         </Heading>
         <Text
           fontSize="xl"
-          textAlign={["center", "center", "left"]}
+          // textAlign={["left", "center", "left"]}
           color="gray.600"
           lineHeight={1.7}
         >

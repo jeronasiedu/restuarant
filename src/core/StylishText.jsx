@@ -9,7 +9,7 @@ const StylishText = ({ text, color = "blue.600" }) => {
       rounded="full"
       fontWeight={500}
       color={color}
-      mr={2}
+      mx={2}
       wordBreak="keep-all"
       whiteSpace="nowrap"
     >
