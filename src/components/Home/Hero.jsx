@@ -10,8 +10,9 @@ import {
   Input,
   chakra,
   InputLeftElement,
-} from "@chakra-ui/react";
-import { GiMeal } from "react-icons/all";
+} from "@chakra-ui/react"
+import { GiMeal } from "react-icons/all"
+import StylishText from "../../core/StylishText"
 const Hero = () => {
   return (
     <Stack py={16} direction={["column", "column", "row"]} spacing={[8, 5, 3]}>
@@ -22,7 +23,7 @@ const Hero = () => {
           lineHeight={1.2}
         >
           Food for all moods · Where{" "}
-          <chakra.span color="blue.500">Ghana</chakra.span> eats!
+          <chakra.span color="#FF9908">Ghana</chakra.span> eats!
         </Heading>
         <Text
           fontSize="xl"
@@ -30,19 +31,9 @@ const Hero = () => {
           color="gray.600"
           lineHeight={1.7}
         >
-          Every flavor tells a story. Delicious food with meaning. A new way to
-          experience food. at {""}
-          <chakra.span
-            borderWidth={2}
-            borderColor="blue.600"
-            p={1.5}
-            px={3}
-            rounded="full"
-            fontWeight={500}
-            color="blue.600"
-          >
-            Low Cost
-          </chakra.span>{" "}
+          Every flavor tells a <StylishText text="story" color="#FF9908" />.
+          Delicious food with meaning. A new way to experience food. at {""}
+          <StylishText text="Low Cost" />
           but High Quality.
         </Text>
         <chakra.form
@@ -80,7 +71,7 @@ const Hero = () => {
         />
       </Center>
     </Stack>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
