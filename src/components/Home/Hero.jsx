@@ -1,15 +1,15 @@
 import {
+  Button,
+  Center,
+  chakra,
   Heading,
   Image,
-  Stack,
-  VStack,
-  Center,
-  Text,
-  Button,
-  InputGroup,
   Input,
-  chakra,
+  InputGroup,
   InputLeftElement,
+  Stack,
+  Text,
+  VStack,
 } from "@chakra-ui/react"
 import { GiMeal } from "react-icons/all"
 import StylishText from "../../core/StylishText"
@@ -19,7 +19,7 @@ const Hero = () => {
       <VStack flex="1" spacing={8}>
         <Heading
           size="3xl"
-          // textAlign={["center", "center", "left"]}
+          textAlign={["left", "center", "left"]}
           lineHeight={1.2}
         >
           Food for all moods, Where{" "}
@@ -27,7 +27,7 @@ const Hero = () => {
         </Heading>
         <Text
           fontSize="xl"
-          // textAlign={["left", "center", "left"]}
+          textAlign={["left", "center", "left"]}
           color="gray.600"
           lineHeight={1.7}
         >
