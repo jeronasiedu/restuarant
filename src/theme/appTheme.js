@@ -20,6 +20,15 @@ const theme = extendTheme(
         900: "#331E00",
       },
     },
+    components: {
+      Button: {
+        baseStyle: {
+          _focus: {
+            boxShadow: "0 0 0 3px #FFA92E",
+          },
+        },
+      },
+    },
   },
   withDefaultColorScheme({
     colorScheme: "brand",
