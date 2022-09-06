@@ -4,19 +4,16 @@ import {
   chakra,
   Heading,
   Image,
-  Input,
-  InputGroup,
-  InputLeftElement,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/react"
-import { GiMeal } from "react-icons/all"
+import { BiChevronRight } from "react-icons/bi"
 import StylishText from "../../core/StylishText"
 const Hero = () => {
   return (
     <Stack py={12} direction={["column", "column", "row"]} spacing={[8, 5, 3]}>
-      <VStack flex="1" spacing={8}>
+      <VStack flex="1" spacing={8} alignItems="flex-start">
         <Heading
           size="3xl"
           textAlign={["left", "center", "left"]}
@@ -36,30 +33,13 @@ const Hero = () => {
           <StylishText text="Low Cost" />
           and High Quality.
         </Text>
-        <chakra.form
-          alignSelf={["center", "center", "flex-start"]}
-          color="gray.300"
+        <Button
+          w={["80%", "50%", "auto"]}
+          // alignSelf={["center", "left", "left"]}
+          rightIcon={<BiChevronRight />}
         >
-          <InputGroup>
-            <InputLeftElement pointerEvents="none">
-              <GiMeal />
-            </InputLeftElement>
-            <Input
-              type="search"
-              placeholder="Find a meal"
-              borderTopRightRadius={0}
-              borderBottomRightRadius={0}
-              color="black"
-            />
-            <Button
-              colorScheme="blue"
-              borderTopLeftRadius={0}
-              borderBottomLeftRadius={0}
-            >
-              Search
-            </Button>
-          </InputGroup>
-        </chakra.form>
+          Browse Menus
+        </Button>
       </VStack>
       <Center flex="1">
         <Image

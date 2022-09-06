@@ -4,7 +4,6 @@ const StylishText = ({ text, color = "blue.600" }) => {
     <chakra.span
       borderWidth={2}
       borderColor={color}
-      py={1}
       px={2.5}
       rounded="full"
       fontWeight={500}
