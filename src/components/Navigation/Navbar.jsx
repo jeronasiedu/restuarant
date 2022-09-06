@@ -1,5 +1,15 @@
-import { Button, HStack, IconButton, Link, Spacer } from "@chakra-ui/react"
-import { BiShoppingBag, BiMenu } from "react-icons/all"
+import {
+  HStack,
+  IconButton,
+  Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Show,
+  Spacer,
+} from "@chakra-ui/react"
+import { BiShoppingBag, CgMenu } from "react-icons/all"
 const Navbar = () => {
   const links = [
     {
@@ -24,10 +34,7 @@ const Navbar = () => {
       <Link href="/">Logo</Link>
       <Spacer />
       <HStack spacing={[4, 5, 7, 10]}>
-        <HStack
-          spacing={[4, 5, 7, 10]}
-          display={["none", "none", "none", "block"]}
-        >
+        <HStack spacing={[4, 5, 7, 10]} display={["none", "none", "block"]}>
           {links.map((item, idx) => (
             <Link key={idx} href={item.url}>
               {item.title}
@@ -37,13 +44,23 @@ const Navbar = () => {
         <IconButton
           icon={<BiShoppingBag size={22} />}
           isRound
-          variant="outline"
+          variant="ghost"
         />
-        <Button display={["none", "none", "none", "block"]}>Login</Button>
-        <IconButton
-          icon={<BiMenu size={22} />}
-          display={["inline-flex", "inline-flex", "inline-flex", "none"]}
-        />
+        <Show below="md">
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              aria-label="Menu"
+              icon={<CgMenu />}
+              variant="outline"
+            />
+            <MenuList>
+              {links.map((item, index) => (
+                <MenuItem key={index}>{item.title}</MenuItem>
+              ))}
+            </MenuList>
+          </Menu>
+        </Show>
       </HStack>
     </HStack>
   )
