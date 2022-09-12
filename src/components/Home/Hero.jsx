@@ -11,7 +11,7 @@ import {
   VStack,
 } from "@chakra-ui/react"
 import { BiRightArrow } from "react-icons/bi"
-import { EffectCards } from "swiper"
+import { Autoplay, EffectCards } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import StylishText from "../../core/StylishText"
 const Hero = () => {
@@ -30,6 +30,7 @@ const Hero = () => {
         mx="auto"
         py={12}
         px={5}
+        w="full"
       >
         <VStack w="full" spacing={8}>
           <Heading
@@ -62,13 +63,15 @@ const Hero = () => {
             </Button>
           </Show>
         </VStack>
-        <Center w="full">
+        <Center w="full" overflow="hidden">
           <Swiper
-            style={{
-              maxWidth: "36rem",
-            }}
-            modules={[EffectCards]}
+            modules={[EffectCards, Autoplay]}
+            grabCursor
             effect="cards"
+            centeredSlides
+            autoplay
+            loop
+            className="mySwiper"
           >
             {slides.map((slide, index) => (
               <SwiperSlide
