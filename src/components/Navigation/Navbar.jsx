@@ -8,8 +8,10 @@ import {
   MenuList,
   Show,
   Spacer,
+  useColorMode,
+  useColorModeValue,
 } from "@chakra-ui/react"
-import { BiShoppingBag, CgMenu } from "react-icons/all"
+import { BiMoon, BiSun, CgMenu } from "react-icons/all"
 const Navbar = () => {
   const links = [
     {
@@ -29,6 +31,8 @@ const Navbar = () => {
       url: "/",
     },
   ]
+  const { toggleColorMode } = useColorMode()
+  const themeIcon = useColorModeValue(<BiMoon size={22} />, <BiSun size={22} />)
   return (
     <HStack py="3" px={[3, 6, 8]} shadow="sm" as="nav">
       <Link href="/">Logo</Link>
@@ -42,9 +46,10 @@ const Navbar = () => {
           ))}
         </HStack>
         <IconButton
-          icon={<BiShoppingBag size={22} />}
+          icon={themeIcon}
           isRound
           variant="ghost"
+          onClick={toggleColorMode}
         />
         <Show below="md">
           <Menu>

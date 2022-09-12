@@ -22,7 +22,12 @@ const Hero = () => {
     "/images/food5.jpg",
   ]
   return (
-    <Box bg="brand.50">
+    <Box
+      bg="brand.50"
+      _dark={{
+        bg: "blackAlpha.300",
+      }}
+    >
       <Stack
         direction={["column", "column", "column", "row"]}
         spacing={[8, 5, 3]}
@@ -44,6 +49,9 @@ const Hero = () => {
           <Text
             fontSize="xl"
             color="gray.600"
+            _dark={{
+              color: "gray.300",
+            }}
             lineHeight={1.7}
             textAlign={["left", "center", "center", "left"]}
           >
@@ -56,8 +64,14 @@ const Hero = () => {
             <Button
               py={6}
               px={14}
-              alignSelf="flex-start"
+              alignSelf={{ md: "center", lg: "flex-start" }}
               rightIcon={<BiRightArrow />}
+              // sx={{
+              //   "@media (max-width: 768px)": {
+              //     marginBottom: "2rem",
+              //   },
+              // }}
+              mb={5}
             >
               Our Menu
             </Button>
@@ -90,7 +104,7 @@ const Hero = () => {
             ))}
           </Swiper>
         </Center>
-        <Show below="md">
+        <Show breakpoint="@media (max-width: 767px)">
           <Button
             py={6}
             sx={{
