@@ -27,23 +27,7 @@ const Dishes = () => {
   return (
     <VStack alignItems="flex-start" py={8}>
       <Stack w="full" direction={["column", "column", "row"]} spacing={3}>
-        <Heading
-          justifySelf="center"
-          pos="relative"
-          // sx={{
-          //   "&::before": {
-          //     content: "''",
-          //     pos: "absolute",
-          //     bottom: -1,
-          //     left: 0,
-          //     //   transform: 'translateX(-50%)',
-          //     w: "40%",
-          //     height: "4px",
-          //     rounded: "sm",
-          //     bg: "brand.500",
-          //   },
-          // }}
-        >
+        <Heading justifySelf="center" pos="relative">
           Our New Hottest Dish
         </Heading>
         <Spacer />

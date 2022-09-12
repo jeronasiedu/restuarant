@@ -44,23 +44,7 @@ const Menu = () => {
   return (
     <VStack alignItems="flex-start" py={8} spacing={8}>
       <HStack w="full">
-        <Heading
-          justifySelf="center"
-          pos="relative"
-          // sx={{
-          //   "&::before": {
-          //     content: "''",
-          //     pos: "absolute",
-          //     bottom: -1,
-          //     left: "0",
-          //     transform: "translateX(-50%)",
-          //     w: "50%",
-          //     height: "4px",
-          //     rounded: "sm",
-          //     bg: "brand.500",
-          //   },
-          // }}
-        >
+        <Heading justifySelf="center" pos="relative">
           Our Menus
         </Heading>
         <Spacer />

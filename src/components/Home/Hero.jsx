@@ -104,7 +104,7 @@ const Hero = () => {
             ))}
           </Swiper>
         </Center>
-        <Show breakpoint="@media (max-width: 767px)">
+        <Show breakpoint="(max-width: 767px)">
           <Button
             py={6}
             sx={{
