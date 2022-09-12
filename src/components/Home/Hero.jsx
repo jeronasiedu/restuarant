@@ -30,7 +30,7 @@ const Hero = () => {
     >
       <Stack
         direction={["column", "column", "column", "row"]}
-        spacing={[8, 5, 3]}
+        spacing={[8, 5, 8, 3]}
         maxW="container.xl"
         mx="auto"
         py={12}
