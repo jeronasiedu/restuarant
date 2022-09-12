@@ -11,8 +11,16 @@ import {
   VStack,
 } from "@chakra-ui/react"
 import { BiRightArrow } from "react-icons/bi"
+import { EffectCards } from "swiper"
+import { Swiper, SwiperSlide } from "swiper/react"
 import StylishText from "../../core/StylishText"
 const Hero = () => {
+  const slides = [
+    "/images/food1.jpg",
+    "/images/food3.jpg",
+    "/images/food4.jpg",
+    "/images/food5.jpg",
+  ]
   return (
     <Box bg="brand.50">
       <Stack
@@ -23,7 +31,7 @@ const Hero = () => {
         py={12}
         px={5}
       >
-        <VStack flex="1" spacing={8}>
+        <VStack w="full" spacing={8}>
           <Heading
             size="3xl"
             textAlign={["left", "center", "center", "left"]}
@@ -48,24 +56,37 @@ const Hero = () => {
               py={6}
               px={14}
               alignSelf="flex-start"
-              // sx={{
-              //   "@media (max-width: 768px)": {
-              //     width: "100%",
-              //   },
-              // }}
               rightIcon={<BiRightArrow />}
             >
               Our Menu
             </Button>
           </Show>
         </VStack>
-        <Center flex="1">
-          <Image
-            src="/images/food2.png"
-            alt="An image of food on a plate"
-            // h="full"
-            objectFit="cover"
-          />
+        <Center w="full">
+          <Swiper
+            style={{
+              maxWidth: "36rem",
+            }}
+            modules={[EffectCards]}
+            effect="cards"
+          >
+            {slides.map((slide, index) => (
+              <SwiperSlide
+                key={index}
+                // style={{
+                //   width: "20rem",
+                //   height: "20rem",
+                // }}
+              >
+                <Image
+                  src={slide}
+                  rounded="xl"
+                  objectFit="cover"
+                  alt="swiper image"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </Center>
         <Show below="md">
           <Button
