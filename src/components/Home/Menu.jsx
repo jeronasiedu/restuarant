@@ -1,23 +1,23 @@
 import {
+  Center,
   Heading,
   HStack,
   IconButton,
   Image,
-  Spacer,
-  Text,
-  VStack,
   LinkBox,
   LinkOverlay,
-  Center,
+  Spacer,
+  Text,
   useMediaQuery,
-} from '@chakra-ui/react'
-import { useRef, useCallback, useEffect, useState, Suspense } from 'react'
-import { BiLeftArrow, BiRightArrow } from 'react-icons/all'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper'
+  VStack,
+} from "@chakra-ui/react"
+import { Suspense, useCallback, useEffect, useRef, useState } from "react"
+import { BiLeftArrow, BiRightArrow } from "react-icons/all"
+import { Autoplay } from "swiper"
+import { Swiper, SwiperSlide } from "swiper/react"
 const Menu = () => {
-  const [tablet] = useMediaQuery('(min-width:62em)')
-  const [desktop] = useMediaQuery('(min-width:80em')
+  const [tablet] = useMediaQuery("(min-width:62em)")
+  const [desktop] = useMediaQuery("(min-width:80em")
   const sliderRef = useRef()
   const [menu, setMenu] = useState([])
   let spacing = tablet ? 15 : desktop ? 20 : 10
@@ -32,7 +32,7 @@ const Menu = () => {
   }, [])
   const fetchMenu = async () => {
     const response = await fetch(
-      'https://www.themealdb.com/api/json/v1/1/categories.php'
+      "https://www.themealdb.com/api/json/v1/1/categories.php"
     )
     const { categories } = await response.json()
     setMenu(categories)
@@ -47,19 +47,19 @@ const Menu = () => {
         <Heading
           justifySelf="center"
           pos="relative"
-          sx={{
-            '&::before': {
-              content: "''",
-              pos: 'absolute',
-              bottom: -1,
-              left: '50%',
-              transform: 'translateX(-50%)',
-              w: '50%',
-              height: '4px',
-              rounded: 'sm',
-              bg: 'blue.400',
-            },
-          }}
+          // sx={{
+          //   "&::before": {
+          //     content: "''",
+          //     pos: "absolute",
+          //     bottom: -1,
+          //     left: "0",
+          //     transform: "translateX(-50%)",
+          //     w: "50%",
+          //     height: "4px",
+          //     rounded: "sm",
+          //     bg: "brand.500",
+          //   },
+          // }}
         >
           Our Menus
         </Heading>
@@ -75,7 +75,7 @@ const Menu = () => {
           slidesPerView={3}
           grabCursor
           style={{
-            width: '100%',
+            width: "100%",
           }}
           loop
           breakpoints={{
@@ -97,12 +97,12 @@ const Menu = () => {
               <LinkBox>
                 <VStack
                   p={6}
-                  bg="blue.100"
+                  bg="brand.100"
+                  _dark={{ bg: "brand.200" }}
                   rounded="md"
                   _hover={{
-                    bg: 'blue.400',
+                    bg: "brand.500",
                   }}
-                  role="group"
                   transition="0.5s ease background-color"
                 >
                   <Center overflow="hidden">
@@ -116,15 +116,7 @@ const Menu = () => {
                       />
                     </LinkOverlay>
                   </Center>
-                  <Text
-                    _groupHover={{
-                      color: 'white',
-                    }}
-                    transition="0.5s ease"
-                    fontSize="lg"
-                  >
-                    {item.strCategory}
-                  </Text>
+                  <Text fontSize="lg">{item.strCategory}</Text>
                 </VStack>
               </LinkBox>
             </SwiperSlide>

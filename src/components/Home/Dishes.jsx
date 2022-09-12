@@ -2,7 +2,6 @@ import {
   Button,
   ButtonGroup,
   Heading,
-  HStack,
   Spacer,
   Stack,
   VStack,
@@ -31,19 +30,19 @@ const Dishes = () => {
         <Heading
           justifySelf="center"
           pos="relative"
-          sx={{
-            "&::before": {
-              content: "''",
-              pos: "absolute",
-              bottom: -1,
-              left: 0,
-              //   transform: 'translateX(-50%)',
-              w: "40%",
-              height: "4px",
-              rounded: "sm",
-              bg: "blue.400",
-            },
-          }}
+          // sx={{
+          //   "&::before": {
+          //     content: "''",
+          //     pos: "absolute",
+          //     bottom: -1,
+          //     left: 0,
+          //     //   transform: 'translateX(-50%)',
+          //     w: "40%",
+          //     height: "4px",
+          //     rounded: "sm",
+          //     bg: "brand.500",
+          //   },
+          // }}
         >
           Our New Hottest Dish
         </Heading>
