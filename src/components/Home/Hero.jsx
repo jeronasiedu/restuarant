@@ -80,13 +80,12 @@ const Hero = () => {
                 //   width: "20rem",
                 //   height: "20rem",
                 // }}
+                style={{
+                  borderRadius: "0.4rem",
+                  overflow: "hidden",
+                }}
               >
-                <Image
-                  src={slide}
-                  rounded="xl"
-                  objectFit="cover"
-                  alt="swiper image"
-                />
+                <Image src={slide} objectFit="cover" alt="swiper image" />
               </SwiperSlide>
             ))}
           </Swiper>
