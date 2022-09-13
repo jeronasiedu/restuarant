@@ -1,5 +1,5 @@
 import { Container } from "@chakra-ui/react"
-import { Dishes, Hero, Menu, Navbar } from "./components"
+import { About, Hero, Navbar } from "./components"
 
 function App() {
   return (
@@ -7,8 +7,7 @@ function App() {
       <Navbar />
       <Hero />
       <Container maxW="container.xl">
-        <Menu />
-        <Dishes />
+        <About />
       </Container>
     </>
   )

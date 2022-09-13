@@ -23,9 +23,16 @@ const theme = extendTheme(
     components: {
       Button: {
         baseStyle: {
+          borderRadius: "0",
+          padding: "1.5rem",
           _focus: {
             boxShadow: "0 0 0 3px #FFA92E",
           },
+        },
+      },
+      Text: {
+        baseStyle: {
+          fontSize: "1.25rem",
         },
       },
     },

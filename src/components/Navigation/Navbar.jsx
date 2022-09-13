@@ -51,7 +51,7 @@ const Navbar = () => {
           variant="ghost"
           onClick={toggleColorMode}
         />
-        <Show below="md">
+        <Show breakpoint="(max-width: 767px)">
           <Menu>
             <MenuButton
               as={IconButton}
