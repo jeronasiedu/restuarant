@@ -58,6 +58,7 @@ const Navbar = () => {
               aria-label="Menu"
               icon={<CgMenu />}
               variant="outline"
+              rounded="md"
             />
             <MenuList>
               {links.map((item, index) => (

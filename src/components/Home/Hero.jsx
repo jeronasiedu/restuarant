@@ -44,23 +44,24 @@ const Hero = () => {
             lineHeight={1.3}
           >
             Food for all moods, Where{" "}
-            <chakra.span color="#FF9908">Ghana</chakra.span> eats!
+            <chakra.span color="brand.500">Ghana</chakra.span> eats!
           </Heading>
           <Text
             lineHeight={1.7}
             textAlign={["left", "center", "center", "left"]}
           >
-            Every flavor tells a <StylishText text="Story." color="brand.500" />
+            Every flavor tells a <StylishText text="Story." />
             Delicious food with meaning. A new way to experience food at
             <StylishText text="Low Cost" />
             and High Quality.
           </Text>
           <Show above="md">
             <Button
-              px={14}
               alignSelf={{ md: "center", lg: "flex-start" }}
               rightIcon={<BiRightArrow />}
               mb={5}
+              px={14}
+              py={6}
             >
               Our Menu
             </Button>
@@ -91,6 +92,7 @@ const Hero = () => {
         </Center>
         <Show breakpoint="(max-width: 767px)">
           <Button
+            px={14}
             py={6}
             sx={{
               "@media (max-width: 768px)": {
