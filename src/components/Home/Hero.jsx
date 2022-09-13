@@ -25,7 +25,7 @@ const Hero = () => {
     <Box
       bg="brand.50"
       _dark={{
-        bg: "blackAlpha.300",
+        bg: "brand.900",
       }}
     >
       <Stack
