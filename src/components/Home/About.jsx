@@ -7,6 +7,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react"
+import { AiOutlineDoubleRight } from "react-icons/all"
 
 const About = () => {
   return (
@@ -41,7 +42,12 @@ const About = () => {
             Chefs
           </Text>
         </VStack>
-        <Button px={14} py={6} w={["full", "full", "auto"]}>
+        <Button
+          px={14}
+          py={6}
+          w={["full", "full", "auto"]}
+          rightIcon={<AiOutlineDoubleRight />}
+        >
           Latest Offers
         </Button>
       </VStack>

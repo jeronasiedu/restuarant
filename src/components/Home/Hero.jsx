@@ -10,7 +10,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react"
-import { BiRightArrow } from "react-icons/bi"
+import { AiOutlineDoubleRight } from "react-icons/all"
 import { Autoplay, EffectCards } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import StylishText from "../../core/StylishText"
@@ -58,7 +58,7 @@ const Hero = () => {
           <Show above="md">
             <Button
               alignSelf={{ md: "center", lg: "flex-start" }}
-              rightIcon={<BiRightArrow />}
+              rightIcon={<AiOutlineDoubleRight />}
               mb={5}
               px={14}
               py={6}
@@ -99,7 +99,7 @@ const Hero = () => {
                 width: "100%",
               },
             }}
-            rightIcon={<BiRightArrow />}
+            rightIcon={<AiOutlineDoubleRight />}
           >
             Our Menu
           </Button>
