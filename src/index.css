@@ -10,3 +10,6 @@ body {
 .mySwiper {
   width: min(36rem, 90%);
 }
+* {
+  -webkit-tap-highlight-color: transparent;
+}
