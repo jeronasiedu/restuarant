@@ -47,11 +47,6 @@ const Hero = () => {
             <chakra.span color="#FF9908">Ghana</chakra.span> eats!
           </Heading>
           <Text
-            fontSize="xl"
-            color="gray.600"
-            _dark={{
-              color: "gray.300",
-            }}
             lineHeight={1.7}
             textAlign={["left", "center", "center", "left"]}
           >
@@ -62,7 +57,6 @@ const Hero = () => {
           </Text>
           <Show above="md">
             <Button
-              py={6}
               px={14}
               alignSelf={{ md: "center", lg: "flex-start" }}
               rightIcon={<BiRightArrow />}
@@ -85,10 +79,6 @@ const Hero = () => {
             {slides.map((slide, index) => (
               <SwiperSlide
                 key={index}
-                // style={{
-                //   width: "20rem",
-                //   height: "20rem",
-                // }}
                 style={{
                   borderRadius: "0.4rem",
                   overflow: "hidden",
