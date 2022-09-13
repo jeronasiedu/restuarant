@@ -41,7 +41,7 @@ const About = () => {
             Chefs
           </Text>
         </VStack>
-        <Button px={14} w={["full", "full", "auto"]}>
+        <Button px={14} py={6} w={["full", "full", "auto"]}>
           Latest Offers
         </Button>
       </VStack>
