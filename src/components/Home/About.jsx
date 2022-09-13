@@ -14,7 +14,7 @@ const About = () => {
     <Stack
       w="full"
       py={14}
-      px={5}
+      px={2}
       spacing={[8, 12, 16, 24]}
       direction={["column-reverse", "column-reverse", "column-reverse", "row"]}
     >
