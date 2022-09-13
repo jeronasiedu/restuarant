@@ -55,7 +55,7 @@ const Hero = () => {
             lineHeight={1.7}
             textAlign={["left", "center", "center", "left"]}
           >
-            Every flavor tells a <StylishText text="Story." color="#FF9908" />
+            Every flavor tells a <StylishText text="Story." color="brand.500" />
             Delicious food with meaning. A new way to experience food at
             <StylishText text="Low Cost" />
             and High Quality.
@@ -66,11 +66,6 @@ const Hero = () => {
               px={14}
               alignSelf={{ md: "center", lg: "flex-start" }}
               rightIcon={<BiRightArrow />}
-              // sx={{
-              //   "@media (max-width: 768px)": {
-              //     marginBottom: "2rem",
-              //   },
-              // }}
               mb={5}
             >
               Our Menu
