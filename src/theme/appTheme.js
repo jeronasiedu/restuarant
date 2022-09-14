@@ -19,6 +19,10 @@ const theme = extendTheme(
         800: "#00383f",
         900: "#001518",
       },
+      text: {
+        dark: "#A0AEC0",
+        light: "#4A5568",
+      },
     },
     components: {
       Button: {
@@ -40,6 +44,9 @@ const theme = extendTheme(
           _focus: {
             boxShadow:
               colorMode === "light" ? "0 0 0 3px #45d4c8" : "0 0 0 3px #1d918c",
+          },
+          _hover: {
+            textDecorationColor: colorMode === "light" ? "#45d4c8" : "#1d918c",
           },
         }),
       },
