@@ -12,7 +12,7 @@ const MenuFood = () => {
       boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px"
     >
       <Box
-        p={2}
+        p={[1, 1, 1, 2]}
         borderWidth={2}
         borderStyle="dashed"
         rounded="sm"

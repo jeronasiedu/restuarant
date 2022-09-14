@@ -22,7 +22,7 @@ const Explore = () => {
       as="section"
       py={[4, 6, 8]}
       pb={10}
-      px={2}
+      px={1}
     >
       <Heading size="md" color="brand.400">
         Explore
