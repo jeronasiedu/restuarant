@@ -25,6 +25,7 @@ const Hero = () => {
     <Box
       bg="brand.50"
       _dark={{
+        // TODO: change the background color
         bg: "brand.900",
       }}
     >
@@ -41,7 +42,7 @@ const Hero = () => {
           <Heading
             size="3xl"
             textAlign={["left", "center", "center", "left"]}
-            lineHeight={1.3}
+            lineHeight={1.1}
           >
             Food for all moods, Where{" "}
             <chakra.span color="brand.500">Ghana</chakra.span> eats!
