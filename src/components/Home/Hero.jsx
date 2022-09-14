@@ -50,6 +50,7 @@ const Hero = () => {
           <Text
             lineHeight={1.7}
             textAlign={["left", "center", "center", "left"]}
+            maxW="xl"
           >
             Every flavor tells a <StylishText text="Story." />
             Delicious food with meaning. A new way to experience food at
