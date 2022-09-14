@@ -35,6 +35,14 @@ const theme = extendTheme(
           fontSize: "1.25rem",
         },
       },
+      Link: {
+        baseStyle: ({ colorMode }) => ({
+          _focus: {
+            boxShadow:
+              colorMode === "light" ? "0 0 0 3px #45d4c8" : "0 0 0 3px #1d918c",
+          },
+        }),
+      },
     },
   },
   withDefaultColorScheme({
