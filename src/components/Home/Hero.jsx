@@ -45,7 +45,15 @@ const Hero = () => {
             lineHeight={1.1}
           >
             Food for all moods, Where{" "}
-            <chakra.span color="brand.500">Ghana</chakra.span> eats!
+            <chakra.span
+              color="brand.500"
+              _dark={{
+                color: "brand.400",
+              }}
+            >
+              Ghana
+            </chakra.span>{" "}
+            eats!
           </Heading>
           <Text
             lineHeight={1.7}
