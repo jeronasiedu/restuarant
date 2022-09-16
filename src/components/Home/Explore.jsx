@@ -51,7 +51,7 @@ const Explore = () => {
       </Stack>
       <SimpleGrid
         w="full"
-        minChildWidth={["160px", "170px", "190px", "210px"]}
+        minChildWidth={["190px", "210px"]}
         spacing={[2, 3]}
         rowGap={5}
         as={motion.div}

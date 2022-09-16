@@ -30,7 +30,7 @@ const MenuFood = ({ image, name }) => {
         alt="rice"
         rounded="sm"
         w="full"
-        h={["9rem", "10rem", "11rem"]}
+        h={["12rem", "10rem", "11rem"]}
         objectFit="cover"
       />
       <VStack w="full" alignItems="flex-start" spacing={1}>
