@@ -1,6 +1,6 @@
-import { Image, Text, VStack } from "@chakra-ui/react"
+import { Box, Button, Image, Text, VStack } from "@chakra-ui/react"
 import { motion } from "framer-motion"
-const MenuFood = ({ image }) => {
+const MenuFood = ({ image, name }) => {
   return (
     <VStack
       rounded="sm"
@@ -33,17 +33,11 @@ const MenuFood = ({ image }) => {
         h={["9rem", "10rem", "11rem"]}
         objectFit="cover"
       />
-      <VStack spacing={0} alignItems="flex-start" p={2}>
-        <Text>Rice with Stew</Text>
-        <Text
-          fontSize="sm"
-          color="text.light"
-          _dark={{
-            color: "text.dark",
-          }}
-        >
-          Enjoy our delicious rice prepared by our team of expert chefs
-        </Text>
+      <VStack w="full" alignItems="flex-start" spacing={1}>
+        <Box px={2}>
+          <Text>{name}</Text>
+        </Box>
+        <Button w="full">Learn More</Button>
       </VStack>
     </VStack>
   )

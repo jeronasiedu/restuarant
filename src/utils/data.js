@@ -1,83 +1,69 @@
 const breakfast = [
   {
-    name: "Porridge",
+    name: "Breakfast",
     desc: "Enjoy a delicious porridge prepared by our team",
     image: "/images/breakfast/1.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Breakfast",
     image: "/images/breakfast/2.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Breakfast",
     image: "/images/breakfast/3.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Breakfast",
     image: "/images/breakfast/4.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Breakfast",
     image: "/images/breakfast/5.jpg",
   },
 ]
 const lunch = [
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Lunch",
     image: "/images/lunch/1.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Lunch",
     image: "/images/lunch/2.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Lunch",
     image: "/images/lunch/3.jpg",
   },
 ]
 const dinner = [
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Dinner",
     image: "/images/dinner/1.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Dinner",
     image: "/images/dinner/2.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Dinner",
     image: "/images/dinner/3.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Dinner",
     image: "/images/dinner/4.jpg",
   },
 ]
 const dessert = [
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Dessert",
     image: "/images/dessert/1.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Dessert",
     image: "/images/dessert/2.jpg",
   },
   {
-    name: "Porridge",
-    desc: "Enjoy a delicious porridge prepared by our team",
+    name: "Dessert",
     image: "/images/dessert/3.jpg",
   },
 ]
