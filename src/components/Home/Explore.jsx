@@ -4,11 +4,12 @@ import {
   Heading,
   SimpleGrid,
   Stack,
-  useBreakpointValue,
   VStack,
 } from "@chakra-ui/react"
+import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
 import MenuFood from "../../core/MenuFood"
+import { menuSlides } from "../../utils/data"
 
 const Explore = () => {
   const menus = ["Breakfast", "Lunch", "Dinner", "Dessert"]
@@ -16,14 +17,7 @@ const Explore = () => {
   const changeMenuIndex = (id) => {
     setActiveMenuIndex(id)
   }
-  const numberOfSlides = useBreakpointValue(
-    {
-      base: 4,
-      md: 6,
-      lg: 10,
-    },
-    { ssr: false }
-  )
+  const currentMenu = menuSlides[activeMenuIndex]
   return (
     <VStack
       alignItems="flex-start"
@@ -60,12 +54,14 @@ const Explore = () => {
         minChildWidth={["160px", "170px", "190px", "210px"]}
         spacing={[2, 3]}
         rowGap={5}
+        as={motion.div}
+        layout
       >
-        {Array(numberOfSlides)
-          .fill("*")
-          .map((item, index) => (
-            <MenuFood key={index} />
+        <AnimatePresence>
+          {currentMenu.map((item, index) => (
+            <MenuFood key={index} {...item} />
           ))}
+        </AnimatePresence>
       </SimpleGrid>
     </VStack>
   )

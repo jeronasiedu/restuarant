@@ -1,29 +1,39 @@
-import { Box, Image, Text, VStack } from "@chakra-ui/react"
-
-const MenuFood = () => {
+import { Image, Text, VStack } from "@chakra-ui/react"
+import { motion } from "framer-motion"
+const MenuFood = ({ image }) => {
   return (
     <VStack
-      p={2}
       rounded="sm"
       bg="white"
       _dark={{
         bg: "card.dark",
       }}
       shadow="tailwind"
+      overflow="hidden"
+      as={motion.div}
+      layout
+      initial={{
+        y: 70,
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
+      }}
+      exit={{
+        opacity: 0,
+        y: 70,
+      }}
     >
-      <Box
-        p={[1, 1, 1, 2]}
-        borderWidth={2}
-        borderStyle="dashed"
+      <Image
+        src={image}
+        alt="rice"
         rounded="sm"
-        borderColor="brand.100"
-        _dark={{
-          borderColor: "brand.50",
-        }}
-      >
-        <Image src="images/rice.jpg" alt="rice" rounded="sm" />
-      </Box>
-      <VStack spacing={1} alignItems="flex-start">
+        w="full"
+        h={["9rem", "10rem", "11rem"]}
+        objectFit="cover"
+      />
+      <VStack spacing={0} alignItems="flex-start" p={2}>
         <Text>Rice with Stew</Text>
         <Text
           fontSize="sm"
