@@ -20,6 +20,8 @@ const Hero = () => {
     "/images/food3.jpg",
     "/images/food4.jpg",
     "/images/food5.jpg",
+    "/images/lunch/4.jpg",
+    "/images/dessert/3.jpg",
   ]
   return (
     <Box

@@ -4,6 +4,7 @@ import {
   Heading,
   SimpleGrid,
   Stack,
+  useBreakpointValue,
   VStack,
 } from "@chakra-ui/react"
 import { useState } from "react"
@@ -15,6 +16,14 @@ const Explore = () => {
   const changeMenuIndex = (id) => {
     setActiveMenuIndex(id)
   }
+  const numberOfSlides = useBreakpointValue(
+    {
+      base: 4,
+      md: 6,
+      lg: 10,
+    },
+    { ssr: false }
+  )
   return (
     <VStack
       alignItems="flex-start"
@@ -48,11 +57,11 @@ const Explore = () => {
       </Stack>
       <SimpleGrid
         w="full"
-        minChildWidth={["160px", "170px", "180px", "200px"]}
+        minChildWidth={["160px", "170px", "190px", "210px"]}
         spacing={[2, 3]}
         rowGap={5}
       >
-        {Array(6)
+        {Array(numberOfSlides)
           .fill("*")
           .map((item, index) => (
             <MenuFood key={index} />
