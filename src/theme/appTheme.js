@@ -23,6 +23,9 @@ const theme = extendTheme(
         dark: "#A0AEC0",
         light: "#4A5568",
       },
+      card: {
+        dark: "#262837",
+      },
     },
     shadows: {
       tailwind:

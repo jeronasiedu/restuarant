@@ -7,7 +7,7 @@ const MenuFood = () => {
       rounded="sm"
       bg="white"
       _dark={{
-        bg: "brand.900",
+        bg: "card.dark",
       }}
       shadow="tailwind"
     >

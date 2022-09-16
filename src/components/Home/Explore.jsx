@@ -49,7 +49,7 @@ const Explore = () => {
       <SimpleGrid
         w="full"
         minChildWidth={["160px", "170px", "180px", "200px"]}
-        spacing={[2, 3, 5]}
+        spacing={[2, 3]}
         rowGap={5}
       >
         {Array(6)
